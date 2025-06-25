@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    System.out.print("Enter name: ");
+    String a = sc.nextLine();
+    System.out.print("Enter address: ");
+    String b = sc.nextLine();
+    System.out.print("Enter age: ");
+    int c=sc.nextInt();
+    System.out.println("name: " + a);
+    System.out.println("address: " + b);
+    System.out.println("age:"+ c);
+    
+    
+}
+}
