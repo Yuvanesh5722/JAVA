@@ -1,0 +1,56 @@
+output 58
+
+class SLL
+{
+    node head;
+    class node
+    {
+        int data;
+        node next;
+        node(int data)
+        {
+            this.data=data;
+            next=null;
+        }
+    }
+    
+public void insertAtEnd(int data)
+    {
+        node newnode=new node(data);
+        if(head==null)
+        {
+            head=newnode;
+        }
+        else
+        {
+            node temp=head;
+            while(temp.next!=null)
+            {
+                temp=temp.next;
+            }
+            temp.next=newnode;
+        }
+    }
+
+public void display()
+{
+   node temp=head;
+   while(temp!=null)
+   {
+       System.out.print(temp.data+" ");
+       temp=temp.next;
+   }
+   System.out.println();
+}
+}
+
+public class Main
+{
+    public static void main(String[]args)
+    {
+        SLL list1=new SLL();
+        list1.insertAtEnd(58);
+        list1.display();
+    }
+}
+
